@@ -1,3 +1,10 @@
+/**
+ * ID: 116687560
+ * Name: Simon Kuang
+ * Recitation: R4
+ */
+
+
 package com.example.playfaircypher;
 
 import android.annotation.SuppressLint;
