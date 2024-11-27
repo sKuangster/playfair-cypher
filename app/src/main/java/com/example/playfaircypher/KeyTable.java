@@ -1,4 +1,4 @@
-/**
+package com.example.playfaircypher; /**
  * NAME: SIMON KUANG
  * ID: 116687560
  * RECITATION: R04
@@ -127,6 +127,7 @@ public class KeyTable {
      *
      * @return the keytable turned into a 5x5 string
      */
+    @Override
     public String toString()
     {
         StringBuilder sb = new StringBuilder();
@@ -139,4 +140,5 @@ public class KeyTable {
             }
         return sb.toString();
     }
+
 }

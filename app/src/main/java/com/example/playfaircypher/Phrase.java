@@ -1,4 +1,4 @@
-/**
+package com.example.playfaircypher; /**
  * NAME: SIMON KUANG
  * ID: 116687560
  * RECITATION: R04
@@ -348,7 +348,7 @@ public class Phrase extends LinkedList<Bigram>
             return new Bigram(keyTable[rowfirst][colfirst-1], keyTable[rowsecond][4]);
         else if(!enoughSpaceFirst && enoughSpaceSecond)
             return new Bigram(keyTable[rowfirst][4], keyTable[rowsecond][colsecond-1]);
-        else //Not even possible I dont think but there just in case
+        else
             return new Bigram(keyTable[rowfirst][4], keyTable[rowsecond][4]);
     }
 }

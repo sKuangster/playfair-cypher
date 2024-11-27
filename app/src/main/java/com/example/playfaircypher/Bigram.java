@@ -1,3 +1,5 @@
+package com.example.playfaircypher;
+
 /**
  * NAME: SIMON KUANG
  * ID: 116687560

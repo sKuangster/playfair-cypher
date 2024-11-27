@@ -12,11 +12,11 @@
         android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="68dp"
+        android:layout_marginTop="76dp"
         android:text="Playfair Cypher"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textColor="@color/black"
-        android:textSize="22sp"
+        android:textSize="50sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -42,15 +42,55 @@
         android:id="@+id/enter"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="84dp"
+        android:layout_marginTop="24dp"
         android:text="Enter the key for encryption:"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textColor="@color/black"
         android:textSize="22sp"
         app:layout_constraintEnd_toEndOf="@+id/encryptSwitch"
-        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="@+id/encryptSwitch"
-        app:layout_constraintTop_toBottomOf="@+id/title" />
+        app:layout_constraintTop_toBottomOf="@+id/encryptSwitch" />
+
+    <TextView
+        android:id="@+id/askForInputTextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Word to be encrypted:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="@+id/key"
+        app:layout_constraintHorizontal_bias="0.522"
+        app:layout_constraintStart_toStartOf="@+id/key"
+        app:layout_constraintTop_toBottomOf="@+id/key" />
+
+    <TextView
+        android:id="@+id/resultword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Your word is:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="@+id/ready"
+        app:layout_constraintStart_toStartOf="@+id/ready"
+        app:layout_constraintTop_toBottomOf="@+id/ready" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text=""
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/black"
+        android:textSize="40dp"
+        app:layout_constraintEnd_toEndOf="@+id/resultword"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@+id/resultword"
+        app:layout_constraintTop_toBottomOf="@+id/resultword" />
 
     <EditText
         android:id="@+id/key"
@@ -65,5 +105,29 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="@+id/enter"
         app:layout_constraintTop_toBottomOf="@+id/enter" />
+
+    <EditText
+        android:id="@+id/input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text=""
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="@+id/askForInputTextview"
+        app:layout_constraintHorizontal_bias="0.522"
+        app:layout_constraintStart_toStartOf="@+id/askForInputTextview"
+        app:layout_constraintTop_toBottomOf="@+id/askForInputTextview" />
+
+    <Button
+        android:id="@+id/ready"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Encrypt!"
+        app:layout_constraintEnd_toEndOf="@+id/input"
+        app:layout_constraintStart_toStartOf="@+id/input"
+        app:layout_constraintTop_toBottomOf="@+id/input" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
